@@ -1,0 +1,47 @@
+# General
+*.log
+*.DS_Store
+.env
+*.local
+
+# Python (backend)
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/venv/             # Ignore virtual environment
+backend/db.sqlite3        # Ignore SQLite database
+
+# Python dependency files
+backend/.venv/
+backend/venv/
+backend/.python-version
+
+# Node.js (frontend)
+frontend/node_modules/     # Ignore Node modules
+frontend/.next/            # Ignore Next.js build files
+frontend/out/              # Ignore Next.js output directory
+frontend/.env              # Ignore environment files
+frontend/.pnpm-store/      # Ignore PNPM store if used
+frontend/.turbo/           # Ignore turbo cache for monorepo setups
+
+# Dependency directories
+frontend/node_modules/
+frontend/.npm/
+frontend/.cache/
+frontend/pnpm-lock.yaml
+
+# Build and temp files
+frontend/dist/
+frontend/build/
+frontend/tmp/
+frontend/.parcel-cache/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Docker
+docker-compose.override.yml
+**/Dockerfile
+
