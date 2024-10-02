@@ -44,4 +44,12 @@ Thumbs.db
 # Docker
 docker-compose.override.yml
 **/Dockerfile
+# Python cache and bytecode
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/db.sqlite3
 
+# Python virtual environment
+backend/venv/
+backend/haftkhanapi/__pycache__/
